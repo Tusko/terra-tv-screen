@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,600&display=swap");
+@import "weather";
+
+$black: #000;
+$white: #fff;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: url("./terra-logo.svg") no-repeat 50% 90% / 75% auto $black;
+  font: 300 18px/1.4 "Raleway", "Arial", sans-serif;
+  height: 100vh;
+  color: $white;
+  padding: 3vw;
+}
+
+#app {
+  justify-content: space-between;
+  display: flex;
+}
