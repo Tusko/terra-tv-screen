@@ -38,7 +38,7 @@ export default {
       this.weather = null;
       axios
         .get(
-          "https://api.openweathermap.org/data/2.5/weather?q=Khmelnytskyi,ua&APPID=eb9e0756f60584f775d918178eb8da9d&units=metric"
+          `https://api.openweathermap.org/data/2.5/weather?q=Khmelnytskyi,ua&APPID=${process.env.VUE_APP_WEATHER_API_KEY}&units=metric`
         )
         .then(res => {
           this.weather = res.data;
