@@ -1,6 +1,6 @@
 <template>
   <div class="weather">
-    <img :src="require('@/assets/weather-loader.svg')" v-if="!weather" />
+    <preloader v-if="!weather" />
     <slot v-else>
       <div class="weather-title">{{ weather.weather[0].main }}</div>
       <div class="weather-temp">
@@ -24,6 +24,9 @@ import axios from "axios";
 
 export default {
   name: "Weather",
+  components: {
+    preloader: () => import("./preloader")
+  },
   data: () => ({
     weather: null
   }),
