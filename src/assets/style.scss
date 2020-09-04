@@ -17,14 +17,27 @@ img {
 }
 
 body {
-  background: url("./terra-logo.svg") no-repeat 50% 90% / 75% auto $black;
+  background: url("./terra-logo.svg") no-repeat 50% 90% / 75% auto;
   font: 300 18px/1.4 "Raleway", "Arial", sans-serif;
   height: 100vh;
-  color: $white;
+  // color: $white;
   padding: 3vw;
 }
 
 #app {
   justify-content: space-between;
+  flex-direction: column;
   display: flex;
+  h2 {
+    margin-bottom: 40px;
+    font-weight: 900;
+  }
+  h3 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  h4 {
+    font-weight: 500;
+    margin-top: 40px;
+  }
 }
