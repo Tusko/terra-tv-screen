@@ -19,7 +19,7 @@ img {
 body {
   background: url("./terra-logo.svg") no-repeat 50% 90% / 75% auto;
   font: 300 18px/1.4 "Raleway", "Arial", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   // color: $white;
   padding: 3vw;
 }
@@ -39,5 +39,15 @@ body {
   h4 {
     font-weight: 500;
     margin-top: 40px;
+  }
+}
+
+@media (hover: none) {
+  body {
+    background-position: 50% 95%;
+  }
+  #app {
+    padding-bottom: 15vh;
+    display: block;
   }
 }
